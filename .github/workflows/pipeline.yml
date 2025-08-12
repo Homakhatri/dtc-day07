@@ -20,7 +20,7 @@ jobs:
 
     - name: Create .env for client
       run: 
-        echo "REACT_APP_API_UR"=${{ scerets.REACT_APP_API_UR }} > application/client/.env
+        echo "REACT_APP_API_UR"=${{ secrets.REACT_APP_API_UR }} > application/client/.env
 
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-actions@v4
